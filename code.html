@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="bunny.png" alt="Cartoon Bunny" class="bunny"> <!-- Use local relative path -->
+    <form id="registrationForm">
+        <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+            <div id="firstNameError" class="error"></div>
+        </div>
+        <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+            <div id="lastNameError" class="error"></div>
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="field">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <div id="confirmPasswordError" class="error"></div>
+        </div>
+        <div class="field">
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <div id="genderError" class="error"></div>
+        </div>
+        <div class="field">
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Pakistan">Pakistan</option> <!-- Added Pakistan -->
+                <!-- Add more options as needed -->
+            </select>
+            <div id="countryError" class="error"></div>
+        </div>
+        <div class="field">
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <div id="termsError" class="error"></div>
+        </div>
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
